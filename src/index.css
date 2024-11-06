@@ -34,11 +34,11 @@ body {
 }
 
 .num {
-  background-color: hsl(240, 2%, 17%);
+  background-color: hsl(240, 2%, 15%);
 }
 
 .num:hover {
-  background-color: hsl(240, 2%, 22%);
+  background-color: hsl(240, 2%, 20%);
 }
 
 .num:active {
@@ -46,15 +46,27 @@ body {
 }
 
 .operator {
-  background-color: hsl(34, 100%, 53%);
+  background-color: hsl(34, 100%, 50%);
 }
 
 .operator:hover {
-  background-color: hsl(34, 100%, 58%);
+  background-color: hsl(34, 100%, 45%);
 }
 
 .operator:active {
-  background-color: hsl(34, 100%, 66%);
+  background-color: hsl(34, 100%, 55%);
+}
+
+.light-grey {
+  background-color: hsl(240, 2%, 35%);
+}
+
+.light-grey:hover {
+  background-color: hsl(240, 2%, 40%);
+}
+
+.light-grey:active {
+  background-color: hsl(240, 2%, 50%);
 }
 
 #buttons {
@@ -78,7 +90,6 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
   color: inherit;

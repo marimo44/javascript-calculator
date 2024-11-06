@@ -23,64 +23,6 @@ function App() {
     { value: "0", id: "zero", class: "num" },
   ];
 
-  // const handleClick = (currentVal) => {
-  //   // if (displayText.length === 1 && displayText === "0") {
-  //   //   setDisplayText(currentVal);
-  //   // } else {
-  //   //   if (currentVal === ".") {
-  //   //     // Check if the current term already includes a decimal
-  //   //     const parts = displayText.split(/[\+\-\×÷]/); // Split on operators
-  //   //     const currentNumber = parts[parts.length - 1];
-  //   //     if (currentNumber.includes(".")) return; // Ignore if the current number already has a decimal
-  //   //   }
-  //   //   setDisplayText((prevVal) => (prevVal += currentVal));
-  //   // }
-
-  //   if (/[+\-×÷]/.test(currentVal)) {
-  //     // Only allow "-" as the first operator if display is empty or "0"
-  //     if (displayText === "" || displayText === "0") {
-  //       if (currentVal === "-") {
-  //         setDisplayText(currentVal);
-  //       }
-  //       return;
-  //     }
-
-  //     if (/[+\-×÷]$/.test(displayText)) {
-  //       // Allow "-" after an operator, but replace consecutive operators otherwise
-  //       if (currentVal === "-" && !displayText.endsWith("-")) {
-  //         setDisplayText((prevVal) => prevVal + currentVal);
-  //       } else {
-  //         setDisplayText((prevVal) => prevVal.slice(0, -1) + currentVal);
-  //       }
-  //       return;
-  //     }
-  //   }
-
-  //   // Handle decimal and other checks as before
-  //   if (currentVal === ".") {
-  //     const parts = displayText.split(/[\+\-\×÷]/);
-  //     const currentNumber = parts[parts.length - 1];
-  //     if (currentNumber.includes(".")) return;
-  //   }
-
-  //   // if (displayText.length === 1 && displayText === "0") {
-  //   //   setDisplayText(currentVal);
-  //   // } else {
-  //   //   setDisplayText((prevVal) => prevVal + currentVal);
-  //   // }
-
-  //   if (displayText === "0") {
-  //     if (currentVal === ".") {
-  //       setDisplayText("0.");
-  //     } else if (!/[+\-×÷]/.test(currentVal)) {
-  //       setDisplayText(currentVal);
-  //     } else {
-  //       setDisplayText("0" + currentVal);
-  //     }
-  //   } else {
-  //     setDisplayText((prevVal) => prevVal + currentVal);
-  //   }
-  // };
   const handleClick = (currentVal) => {
     // Handle operators
     if (/[+\-×÷]/.test(currentVal)) {
